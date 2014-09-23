@@ -1,0 +1,50 @@
+body {
+    background-color: purple;
+    color: white;
+    font-family: 'Helvetica Neue';
+}
+
+h1 {
+    text-align: center;
+    width: auto;
+}
+
+section {
+    padding: 20px 10px;
+    background-color: pink;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+p {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    background-color: teal;
+    font-variant: small-caps;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    width: auto;
+    text-align: center;
+}
+
+p:nth-of-type(5n) {
+    background-color: lime;
+}
+p:nth-of-type(5n-1) {
+    background-color: red;
+}
+p:nth-of-type(5n-2) {
+    background-color: purple;
+}
+p:nth-of-type(5n-3) {
+    background-color: orange;
+}
+p:nth-of-type(5n-4) {
+    background-color: lightblue;
+}

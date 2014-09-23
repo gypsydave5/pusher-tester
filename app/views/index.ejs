@@ -1,0 +1,27 @@
+<% include header %>
+
+  <h1>Pusherman</h1>
+
+    <script type="text/javascript">
+    $(document).ready( function() {
+
+        var pusher = new Pusher('f9e98574fc8ffef7853e');
+        var channel = pusher.subscribe('mychannel');
+
+        channel.bind('new_message', function(data) {
+            $('<p>' + data.message + '</p>').appendTo($('.messages'));
+        });
+
+    });
+  </script>
+
+<form action="message/new" method="POST">
+  <input name="message" type="text">
+  <button>Send</button>
+</form>
+
+<section class="messages">
+
+</section>
+
+<% include footer %>
